@@ -15,7 +15,7 @@ public class ThirdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
-        tvAnswer.findViewById(R.id.textView);
+        tvAnswer = findViewById(R.id.textView);
         Intent intentReceived = getIntent();
         char value = intentReceived.getCharExtra("value", 'a');
         tvAnswer.setText("Character value received is: " + value);
